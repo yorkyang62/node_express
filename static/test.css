@@ -1,0 +1,15 @@
+body{
+	color: red;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+.reset{
+	display: none;
+}
+
+[v-cloak] {
+	display: none;
+}

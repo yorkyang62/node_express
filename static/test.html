@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<div id="test" v-cloak>
+		<p>
+			<input type="text" v-model="userName">
+			<button @click="searchUser">搜索</button>
+			<button class="reset">重置</button>
+		</p>
+		<table border="1">
+			<tr>
+				<td>id</td>
+				<td>姓名</td>
+			</tr>
+			<tr v-for="list in list">
+				<td>{{list.id}}</td>
+				<td>{{list.name}}</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://unpkg.com/vue@2.2.1/dist/vue.js"></script>
+	<script type="text/javascript" src="test.js"></script>
+</body>
+</html>
